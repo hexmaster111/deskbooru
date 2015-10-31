@@ -4,6 +4,7 @@ import sqlite3
 import hashlib
 
 class tag(object):
+    
     global hashes
     hashes = []
 
@@ -14,15 +15,12 @@ class tag(object):
                 buffer = f.read()
                 h.update(buffer)
                 hash = h.hexdigest()
-                assign = hash
-                hashes.append(assign)
+                hashes.append(hash)
 
-if __name__ == __main__:
-    file = sys.argv
-    file.pop(0)
-
-    tag().id()
-    print(hashes)
+file = sys.argv
+file.pop(0)
+tag().id()
+print(hashes)
 
 
 
