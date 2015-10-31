@@ -4,10 +4,10 @@ tagging.py - tagging system to assign tags to various files and store in a primi
 ------------
 CURRENT priority:
 input a file
-hash the file and assign the hash to a filename by writing to a textfile
-assign IDs to the hashes by writing to the textfile
+hash the file and assign the hash to a filename in a database
+assign IDs to the hashes by inserting into database
 input tags for said file
-write tags to the file
+assign tags to IDs in the database
 write IDs under tags in the tagfile
 
 HIGH priority:
